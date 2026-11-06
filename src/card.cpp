@@ -1,4 +1,4 @@
-include "card.hpp"
+#include "card.hpp"
 
 Card::Card(Rank rank) : rank(rank){}
 
@@ -6,7 +6,7 @@ Rank Card::getRank() const{
 	return rank;
 }
 
-int Card::getValue(){
+int Card::getValue() const{
 	switch(rank){
 		case Rank::Two: 	return 2;
 		case Rank::Three: 	return 3;

@@ -10,10 +10,12 @@ class Deck{
 	public:
 		Deck();
 
+		const std::vector<Card>&getCards() const;
+
 		void shuffle(std::mt19937& rng);
 		
 		Card drawCard();
 
-		std::size_t cardsRemaining() const;
+		size_t cardsRemaining() const;
 		bool isEmpty() const;
-}
+};

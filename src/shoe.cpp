@@ -1,4 +1,5 @@
 #include "shoe.hpp"
+#include "hand.hpp"
 #include <algorithm>
 
 Shoe::Shoe(int numDecks) : numDecks(numDecks){

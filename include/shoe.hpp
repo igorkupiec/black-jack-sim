@@ -1,9 +1,9 @@
 #pragma once
-
+#include <cstddef>
 #include <vector>
 #include <random>
 #include "card.hpp"
-
+#include "deck.hpp"
 class Shoe{
 	private:
 		int numDecks;
@@ -22,4 +22,4 @@ class Shoe{
 		float getTrueCount() 		const;
 		std::size_t cardsRemaining() 	const;
 
-}
+};
